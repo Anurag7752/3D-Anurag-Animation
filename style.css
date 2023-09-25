@@ -1,0 +1,72 @@
+.container {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 40%;
+    top: 34%;
+    perspective: 1000px;
+
+    font-size: 25px;
+    text-align: center;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: transform 3.5s ease;
+}
+
+.cube:hover {
+    transform: rotateX(1.5turn) rotateY(2turn);
+}
+
+.cube div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 3px solid black;
+    background-image: url(http://uupload.ir/files/untp_background.png);
+    background-size: 100%;
+}
+
+.back {
+    transform: translateZ(-100px) rotateX(180deg);
+}
+
+.left {
+    transform: translateX(-100px) rotateY(-90deg);
+}
+
+.right {
+    transform: translateX(100px) rotateY(90deg);
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.top {
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.bottom {
+    transform: translateY(100px) rotateX(-90deg);
+}
+
+.title {
+    position: relative;
+    margin: auto;
+    width: 280px;
+    left: -40px;
+    top: -80px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.title:hover {
+    text-shadow: 0px 0px 20px black;
+}
